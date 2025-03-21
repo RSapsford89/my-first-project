@@ -1,8 +1,17 @@
+/* need to determine a colour scheme for this landing page - coffee and olive colours? */
 body{
     background-color: darkgoldenrod;
     background-image: url("../images/22279329475_369e0af4e1_k.jpg");
 }
 p{
     color:aquamarine;
+    text-align: center;
     font-size: 2rem;
+}
+ h2{
+    text-align: center;
+    display: inline-block;
+}
+.wavy{
+    text-decoration: underline yellowgreen;
 }
