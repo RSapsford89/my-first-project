@@ -15,3 +15,52 @@ p{
 .wavy{
     text-decoration: underline yellowgreen;
 }
+@keyframes scrollLeft {
+    to{
+        left:-200px;
+    }
+}
+.wrapper{
+    border: 1px solid black;
+    width:90%;
+    max-width: 1440px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+.item{
+    width: 200px;
+    height:100px;
+    background-color: chocolate;
+    border-radius: 6px;
+    position:absolute;
+    left:calc();
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.item1{
+    animation-delay: calc(30s / 7 * (7 - 1) * -1);/*Equation is: Duration/no. of items * Delay * -1*/
+}
+.item2{
+    animation-delay: calc(30s / 7 * (7 - 2) * -1);
+}
+.item3{
+    animation-delay: calc(30s / 7 * (7 - 3) * -1);
+}
+.item4{
+    animation-delay: calc(30s / 7 * (7 - 4) * -1);
+}
+.item5{
+    animation-delay: calc(30s / 7 * (7 - 5) * -1);
+}
+.item6{
+    animation-delay: calc(30s / 7 * (7 - 6) * -1);
+}
+.item7{
+    animation-delay: calc(30s / 7 * (7 - 7) * -1);
+}
